@@ -33,7 +33,8 @@ export default function BasicTextFields() {
             <TextField
                 rows="10"
                 id="standard-multiline-static"
-                label="How did your day go?"
+                placeholder="How did your day go?"
+
                 multiline
                 className={classes.textField}
                 margin="normal"
@@ -43,7 +44,7 @@ export default function BasicTextFields() {
                     classes: {
                         notchedOutline: classes.notchedOutline
                     }                }}
-                InputLabelProps={{
+                InputPlaceholderProps={{
                     className: classes.floatingLabelFocusStyle,
                 }}
             />
