@@ -18,7 +18,10 @@ const useStyles = makeStyles(theme => ({
     },
     notchedOutline: {
         borderWidth: "1px",
-        borderColor: "yellow !important"
+        borderColor: "#a6cc78 !important"
+    },
+    floatingLabelFocusStyle: {
+        color: "black"
     }
 }));
 
@@ -30,7 +33,7 @@ export default function BasicTextFields() {
             <TextField
                 rows="10"
                 id="standard-multiline-static"
-                label="Multiline"
+                label="How did your day go?"
                 multiline
                 className={classes.textField}
                 margin="normal"
@@ -40,6 +43,9 @@ export default function BasicTextFields() {
                     classes: {
                         notchedOutline: classes.notchedOutline
                     }                }}
+                InputLabelProps={{
+                    className: classes.floatingLabelFocusStyle,
+                }}
             />
             <GoButton/>
         </div>
