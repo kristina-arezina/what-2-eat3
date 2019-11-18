@@ -8,14 +8,18 @@ import '/Users/milanarezina/WebstormProjects/what-2-eat3/what2eat3/src/App.css';
 const useStyles = makeStyles(theme => ({
     textField: {
         width: "500px",
-        top:"calc(30% - 50px)",
+        top:"100px",
         height: 600,
         left: "calc(50% - 250px)",
         position: "relative",
     },
     input: {
-        color: "white"
+        color: "black"
     },
+    notchedOutline: {
+        borderWidth: "1px",
+        borderColor: "yellow !important"
+    }
 }));
 
 export default function BasicTextFields() {
@@ -32,8 +36,10 @@ export default function BasicTextFields() {
                 margin="normal"
                 variant="outlined"
                 InputProps={{
-                    className: classes.input
-                }}
+                    className: classes.input,
+                    classes: {
+                        notchedOutline: classes.notchedOutline
+                    }                }}
             />
             <GoButton/>
         </div>
