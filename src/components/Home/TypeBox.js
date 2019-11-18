@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     },
     floatingLabelFocusStyle: {
         color: "black"
-    }
+    },
 }));
 
 export default function BasicTextFields() {
