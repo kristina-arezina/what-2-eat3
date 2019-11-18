@@ -1,15 +1,19 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import GoButton from "./Button"
 
 const useStyles = makeStyles(theme => ({
     textField: {
         width: "500px",
-        marginTop:"calc(10% - 50px)",
+        top:"calc(30% - 50px)",
         height: 600,
         position: "absolute",
-        marginLeft: "calc(50% - 250px)",
+        left: "calc(50% - 250px)",
     },
+    input: {
+        color: "white"
+    }
 }));
 
 export default function BasicTextFields() {
@@ -25,7 +29,11 @@ export default function BasicTextFields() {
                 className={classes.textField}
                 margin="normal"
                 variant="outlined"
+                InputProps={{
+                    className: classes.input
+                }}
             />
+            <GoButton/>
         </div>
     );
 }

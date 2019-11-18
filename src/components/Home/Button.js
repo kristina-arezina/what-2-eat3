@@ -5,12 +5,12 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
     textField: {
         width: "200px",
-        marginTop:"calc(30% - 100px)",
+        top: "340px",
+        left:"40%",
         height: 80,
         position: "absolute",
-        marginLeft: "calc(50% - 100px)",
-    },
-}));
+
+    }}));
 
 export default function GoButton() {
     const classes = useStyles();
