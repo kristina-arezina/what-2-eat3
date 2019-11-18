@@ -1,0 +1,27 @@
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import {makeStyles} from "@material-ui/core";
+
+const useStyles = makeStyles(theme => ({
+    textField: {
+        width: "200px",
+        marginTop:"calc(30% - 100px)",
+        height: 80,
+        position: "absolute",
+        marginLeft: "calc(50% - 100px)",
+    },
+}));
+
+export default function GoButton() {
+    const classes = useStyles();
+
+    return (
+        <div>
+            <Button variant="contained"
+                    className={classes.textField}
+            >
+                GO
+            </Button>
+        </div>
+    );
+}
