@@ -9,7 +9,7 @@ class App extends React.Component {
     render() {
 
         return (
-
+            <div className="App">
                 <Router>
 
                     <Fragment>
@@ -25,6 +25,7 @@ class App extends React.Component {
                         )}/>
                     </Fragment>
                 </Router>
+            </div>
         );
     }
 }
