@@ -18,7 +18,7 @@ export default function GoButton() {
     return (
         <div>
             <Button
-
+                href="/results"
                 variant="contained"
                     className={classes.textField}
             >
