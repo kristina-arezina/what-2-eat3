@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import SimpleCard from "./Foods.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -18,13 +19,16 @@ export default function Results() {
     const classes = useStyles();
 
     return (
-        <Paper className={classes.root}>
-            <Typography className={classes.font} variant="h5" component="h3">
-                Sentiment analysis completed!
-            </Typography>
-            <Typography className={classes.font} component="p">
-                Happiness was detected in the text. To enhance your happiness eat the following foods:
-            </Typography>
-        </Paper>
+        <div>
+            <Paper className={classes.root}>
+                <Typography className={classes.font} variant="h5" component="h3">
+                    Sentiment analysis completed!
+                </Typography>
+                <Typography className={classes.font} component="p">
+                    Happiness was detected in the text. To enhance your happiness eat the following foods:
+                </Typography>
+            </Paper>
+            <SimpleCard/>
+        </div>
     );
 }
