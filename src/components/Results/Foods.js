@@ -29,6 +29,7 @@ export default function SimpleCard() {
     const classes = useStyles();
 
     return (
+        <div>
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -49,5 +50,25 @@ export default function SimpleCard() {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
+            <Card className={classes.card}>
+                <CardContent>
+                    <Typography className={classes.title} color="textSecondary" gutterBottom>
+                        Food
+                    </Typography>
+                    <Typography variant="h5" component="h2">
+                        Almonds
+                    </Typography>
+                    <Typography className={classes.pos} color="textSecondary">
+                        Reason
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button size="small">Learn More</Button>
+                </CardActions>
+            </Card>
+</div>
     );
 }
