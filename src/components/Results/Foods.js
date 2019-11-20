@@ -5,12 +5,14 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+
 
 const useStyles = makeStyles({
     card: {
         maxWidth: "230px",
         marginTop:"10px",
-        marginLeft:"10px"
+        marginLeft:"10px",
     },
     bullet: {
         display: 'inline-block',
@@ -30,6 +32,7 @@ export default function SimpleCard() {
 
     return (
         <div>
+            <Grid item xs={6} sm={3}>
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -50,6 +53,8 @@ export default function SimpleCard() {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
+            </Grid>
+            <Grid item xs={6} sm={3}>
             <Card className={classes.card}>
                 <CardContent>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -69,6 +74,8 @@ export default function SimpleCard() {
                     <Button size="small">Learn More</Button>
                 </CardActions>
             </Card>
+            </Grid>
+
 </div>
     );
 }
