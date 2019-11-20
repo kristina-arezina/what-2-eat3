@@ -6,7 +6,12 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
+        marginTop:"20px",
+        backgroundColor:"#379683",
     },
+    font:{
+        color:"white"
+    }
 }));
 
 export default function Results() {
@@ -14,10 +19,10 @@ export default function Results() {
 
     return (
         <Paper className={classes.root}>
-            <Typography variant="h5" component="h3">
+            <Typography className={classes.font} variant="h5" component="h3">
                 This is a sheet of paper.
             </Typography>
-            <Typography component="p">
+            <Typography className={classes.font} component="p">
                 Paper can be used to build surface or other elements for your application.
             </Typography>
         </Paper>
