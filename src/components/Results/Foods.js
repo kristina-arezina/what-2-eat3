@@ -35,7 +35,7 @@ export default function SimpleCard() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Apples
+                    Apples 🍎
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
                     Reason
