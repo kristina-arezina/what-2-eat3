@@ -32,7 +32,8 @@ export default function SimpleCard() {
 
     return (
         <div>
-            <Grid item xs={6} sm={3}>
+            <Grid container spacing={0.5}>
+                <Grid item xs={3} >
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -54,7 +55,7 @@ export default function SimpleCard() {
             </CardActions>
         </Card>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={3}>
             <Card className={classes.card}>
                 <CardContent>
                     <Typography className={classes.title} color="textSecondary" gutterBottom>
@@ -74,6 +75,7 @@ export default function SimpleCard() {
                     <Button size="small">Learn More</Button>
                 </CardActions>
             </Card>
+            </Grid>
             </Grid>
 
 </div>
