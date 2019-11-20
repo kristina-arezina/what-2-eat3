@@ -7,7 +7,7 @@ import SimpleCard from "./Foods.js"
 const useStyles = makeStyles(theme => ({
     root: {
         padding: theme.spacing(3, 2),
-        marginTop:"20px",
+        textAlign: "center",
         backgroundColor:"#379683",
     },
     font:{
@@ -24,8 +24,11 @@ export default function Results() {
                 <Typography className={classes.font} variant="h5" component="h3">
                     Sentiment analysis completed!
                 </Typography>
-                <Typography className={classes.font} component="p">
-                    Happiness was detected in the text. To enhance your happiness eat the following foods:
+                <Typography className={classes.font} variant="h5" component="p">
+                    <b>Happiness</b> was detected in the text.
+                </Typography>
+                <Typography className={classes.font} variant="h5" component="p">
+                    To enhance your happiness eat the following foods:
                 </Typography>
             </Paper>
             <SimpleCard/>
