@@ -20,10 +20,10 @@ export default function Results() {
     return (
         <Paper className={classes.root}>
             <Typography className={classes.font} variant="h5" component="h3">
-                This is a sheet of paper.
+                Sentiment analysis completed!
             </Typography>
             <Typography className={classes.font} component="p">
-                Paper can be used to build surface or other elements for your application.
+                Happiness was detected in the text. To enhance your happiness eat the following foods:
             </Typography>
         </Paper>
     );
