@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Results2 from "./Results2"
+import AppBar from '@material-ui/core/AppBar';
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -10,6 +12,8 @@ const useStyles = makeStyles(theme => ({
         padding: theme.spacing(3, 2),
         textAlign: "center",
         backgroundColor:"#379683",
+        borderRadius: "1px",
+        marginTop:"0px",
     },
     font:{
         color:"white"
@@ -21,7 +25,7 @@ export default function Results() {
 
     return (
         <div>
-            <Paper className={classes.root}>
+            <AppBar elevation="1" className={classes.root}>
                 <Typography className={classes.font} variant="h5" component="h3">
                     Sentiment analysis completed!
                 </Typography>
@@ -31,7 +35,7 @@ export default function Results() {
                 <Typography className={classes.font} variant="h5" component="p">
                     To enhance your happiness eat the following foods:
                 </Typography>
-            </Paper>
+            </AppBar>
             <Results2/>
         </div>
     );
