@@ -2,9 +2,19 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import CardContent from "./Foods";
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import Apple from "../Results/Foods/Apples.js"
+import Almond from "../Results/Foods/Almond.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
+        marginTop:"10px",
+        marginLeft:"10px",
+        marginRight:"10px",
         flexGrow: 1,
     },
     paper: {
@@ -20,15 +30,20 @@ export default function Results2() {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <Paper className={classes.paper}>xs=12</Paper>
+                <Grid item xs={6} sm={3}>
+                    <Apple/>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>xs=12 sm=6</Paper>
+                <Grid item xs={6} sm={3}>
+                    <Almond/>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <Paper className={classes.paper}>xs=12 sm=6</Paper>
+                <Grid item xs={6} sm={3}>
+                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
                 </Grid>
+                <Grid item xs={6} sm={3}>
+                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                </Grid>
+            </Grid>
+            <Grid container spacing={3}>
                 <Grid item xs={6} sm={3}>
                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
                 </Grid>
