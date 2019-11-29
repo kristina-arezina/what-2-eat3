@@ -2,13 +2,13 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import CardContent from "./Foods";
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Apple from "../Results/Foods/Apples.js"
 import Almond from "../Results/Foods/Almond.js"
+import Pear from "../Results/Foods/Pear.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -37,7 +37,7 @@ export default function Results2() {
                     <Almond/>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                    <Pear/>
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
