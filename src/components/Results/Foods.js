@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Results2 from "./Results2"
 
 
 const useStyles = makeStyles({
@@ -32,7 +33,8 @@ export default function SimpleCard() {
 
     return (
         <div>
-            <Grid container spacing={0.5}>
+            <Results2/>
+            <Grid container >
                 <Grid item xs={3} >
         <Card className={classes.card}>
             <CardContent>
