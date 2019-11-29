@@ -20,7 +20,8 @@ export default function Almond() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Almonds are high in healthy monounsaturated fats, fiber, protein and various important nutrients. Additionally, they
+                    are high in antioxidants that can protect your cells from oxidative damage, a major contributor to aging and disease.
                 </Typography>
             </CardContent>
             <CardActions>

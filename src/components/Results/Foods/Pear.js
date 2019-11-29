@@ -20,7 +20,9 @@ export default function Pear() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Pears are a rich source of important minerals, such as copper and potassium.
+                    Copper plays a role in immunity, cholesterol metabolism, and nerve function, whereas potassium aids
+                    muscle contractions and heart function.
                 </Typography>
             </CardContent>
             <CardActions>
