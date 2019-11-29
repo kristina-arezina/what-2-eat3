@@ -13,7 +13,7 @@ import Avocado from "../Results/Foods/Avocado.js"
 import Egg from "../Results/Foods/Egg.js"
 import Asparagus from "../Results/Foods/Asparagus.js"
 import DarkChocolate from "../Results/Foods/DarkChocolate.js"
-import Cucumber from "../Results/Foods/Cucumber.js"
+import Cucumber from "./Foods/Berries.js"
 
 const useStyles = makeStyles(theme => ({
     root: {

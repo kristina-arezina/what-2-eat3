@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-export default function Cucumber() {
+export default function Salmon() {
 
     return (
         <Card >
@@ -14,13 +14,13 @@ export default function Cucumber() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Cucumber 🥒
+                    Berries 🍓
                 </Typography>
                 <Typography color="textSecondary">
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Berries are rich in flavonoid, which helps regulate mood and improve memory and reduces inflammation.
                 </Typography>
             </CardContent>
             <CardActions>

@@ -20,7 +20,9 @@ export default function Egg() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Both the white and yolk of an egg are rich in nutrients, including proteins, vitamins and minerals.
+                    Eggs contain all 9 essential amino acids, are highly concentrated with
+                    vitamins and minerals and are among the best sources of choline you can get.
                 </Typography>
             </CardContent>
             <CardActions>

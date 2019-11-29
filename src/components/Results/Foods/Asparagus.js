@@ -20,7 +20,9 @@ export default function Asparagus() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Asparagus is a nutrient-packed vegetable. It is a very good source of fiber, folate,
+                    vitamins A, C, E and K, as well as chromium, a trace mineral that enhances the ability of
+                    insulin to transport glucose from the bloodstream into cells.
                 </Typography>
             </CardContent>
             <CardActions>

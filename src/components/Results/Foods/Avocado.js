@@ -20,7 +20,8 @@ export default function Avocado() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Avocados are loaded with healthy fats, fiber and various important nutrients.
+                    Their potential health benefits include improving digestion, decreasing risk of depression, and protection against cancer.
                 </Typography>
             </CardContent>
             <CardActions>

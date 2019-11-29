@@ -21,7 +21,8 @@ export default function DarkChocolate() {
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
-                    Consuming almonds increases vitamin E levelsTrusted Source in the plasma and red blood cells.
+                    Dark chocolate is rich in minerals, such as iron, magnesium, and zinc.
+                    The cocoa in dark chocolate also contains antioxidants called flavonoids, which may provide several health benefits.
                 </Typography>
             </CardContent>
             <CardActions>
