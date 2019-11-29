@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-export default function Pear() {
+export default function Egg() {
 
     return (
         <Card >
@@ -14,7 +14,7 @@ export default function Pear() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Pears 🍐
+                    Egg 🥚
                 </Typography>
                 <Typography color="textSecondary">
                     Reason
