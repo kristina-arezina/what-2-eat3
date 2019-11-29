@@ -11,6 +11,7 @@ import Almond from "../Results/Foods/Almond.js"
 import Pear from "../Results/Foods/Pear.js"
 import Avocado from "../Results/Foods/Avocado.js"
 import Egg from "../Results/Foods/Egg.js"
+import Asparagus from "../Results/Foods/Asparagus.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -50,7 +51,7 @@ export default function Results2() {
                     <Egg/>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                    <Asparagus/>
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <Paper className={classes.paper}>xs=6 sm=3</Paper>
