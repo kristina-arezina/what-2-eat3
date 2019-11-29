@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
         marginLeft:"10px",
         marginRight:"10px",
         flexGrow: 1,
+
+    },
+    background:{
         backgroundColor:"#f4f4f4"
     },
     paper: {
@@ -34,6 +37,7 @@ export default function Results2() {
     const classes = useStyles();
 
     return (
+        <div className={classes.background}>
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={6} sm={3}>
@@ -64,5 +68,6 @@ export default function Results2() {
                 </Grid>
             </Grid>
         </div>
+                </div>
     );
 }
