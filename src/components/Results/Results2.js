@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Apple from "../Results/Foods/Apples.js"
 import Almond from "../Results/Foods/Almond.js"
 import Pear from "../Results/Foods/Pear.js"
+import Avocado from "../Results/Foods/Avocado.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -40,7 +41,7 @@ export default function Results2() {
                     <Pear/>
                 </Grid>
                 <Grid item xs={6} sm={3}>
-                    <Paper className={classes.paper}>xs=6 sm=3</Paper>
+                    <Avocado/>
                 </Grid>
             </Grid>
             <Grid container spacing={3}>

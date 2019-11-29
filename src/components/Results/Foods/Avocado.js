@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-export default function Almond() {
+export default function Avocado() {
 
     return (
         <Card >
@@ -14,7 +14,7 @@ export default function Almond() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Almonds
+                    Avocado 🥑
                 </Typography>
                 <Typography color="textSecondary">
                     Reason
