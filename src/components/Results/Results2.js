@@ -167,8 +167,10 @@ export default function Results2() {
                     style={{
                         writingMode: "vertical-rl",
                         textOrientation: "mixed",
-                        transform: "rotate(180deg)"
-                    }}>Hello</Typography>
+                        transform: "rotate(180deg)",
+                        marginLeft:"22px",
+                        fontSize: "35px"
+                    }}>Happiness</Typography>
                 <Divider />
                 <List>
                     {['All mail', 'Trash', 'Spam'].map((text, index) => (
