@@ -1,14 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import Apple from "../Results/Foods/Apples.js"
-import Almond from "../Results/Foods/Almond.js"
-import Pear from "../Results/Foods/Pear.js"
-import Avocado from "../Results/Foods/Avocado.js"
-import Egg from "../Results/Foods/Egg.js"
-import Asparagus from "../Results/Foods/Asparagus.js"
-import DarkChocolate from "../Results/Foods/DarkChocolate.js"
-import Cucumber from "./Foods/Berries.js"
 import clsx from 'clsx';
 import { useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -27,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import FoodResults from "./FoodResults.js";
 
 const drawerWidth = 240;
 
@@ -185,34 +177,7 @@ export default function Results2() {
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={3} >
-                    <Apple/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Almond/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Pear/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Avocado/>
-                </Grid>
-            </Grid>
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={3}>
-                    <Egg/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Asparagus/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <DarkChocolate/>
-                </Grid>
-                <Grid item xs={12} md={3}>
-                    <Cucumber/>
-                </Grid>
-            </Grid>
+            <FoodResults/>
             </main>
         </div>
         </div>
