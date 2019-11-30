@@ -9,7 +9,8 @@ const useStyles = makeStyles(theme => ({
         left:"calc(50% - 100px)",
         height: 80,
         position: "absolute",
-        background: "#379683"
+        background: "#2E0854",
+        color:"white"
     },
 }));
 

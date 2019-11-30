@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     },
     notchedOutline: {
         borderWidth: "1px",
-        borderColor: "#379683 !important"
+        borderColor: "#2E0854 !important"
     },
     floatingLabelFocusStyle: {
         color: "black"
