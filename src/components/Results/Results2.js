@@ -18,6 +18,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import RedoIcon from '@material-ui/icons/Redo';
 import FoodResults from "./FoodResults.js";
 
 const drawerWidth = 240;
@@ -167,9 +168,9 @@ export default function Results2() {
                     }}>Happiness</Typography>
                 <Divider />
                 <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
+                    {['All mail', 'Redo', 'Spam'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
