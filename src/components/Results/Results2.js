@@ -182,30 +182,30 @@ export default function Results2() {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
             <Grid container spacing={3}>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3} >
                     <Apple/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Almond/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Pear/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Avocado/>
                 </Grid>
             </Grid>
             <Grid container spacing={3}>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Egg/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Asparagus/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <DarkChocolate/>
                 </Grid>
-                <Grid item xs={6} sm={3}>
+                <Grid item xs={12} sm={3}>
                     <Cucumber/>
                 </Grid>
             </Grid>
