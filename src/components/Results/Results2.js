@@ -36,6 +36,7 @@ const useStyles = makeStyles(theme => ({
         marginLeft:"10px",
         marginRight:"10px",
         flexGrow: 1,
+        display: 'flex',
 
     },
     background:{
@@ -180,6 +181,8 @@ export default function Results2() {
                     ))}
                 </List>
             </Drawer>
+            <main className={classes.content}>
+                <div className={classes.toolbar} />
             <Grid container spacing={3}>
                 <Grid item xs={6} sm={3}>
                     <Apple/>
@@ -208,7 +211,8 @@ export default function Results2() {
                     <Cucumber/>
                 </Grid>
             </Grid>
+            </main>
         </div>
-                </div>
+        </div>
     );
 }
