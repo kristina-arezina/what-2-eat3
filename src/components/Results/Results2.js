@@ -163,7 +163,12 @@ export default function Results2() {
                     </IconButton>
                 </div>
                 <Divider />
-                <Typography>Hello</Typography>
+                <Typography
+                    style={{
+                        writingMode: "vertical-rl",
+                        textOrientation: "mixed",
+                        transform: "rotate(180deg)"
+                    }}>Hello</Typography>
                 <Divider />
                 <List>
                     {['All mail', 'Trash', 'Spam'].map((text, index) => (
