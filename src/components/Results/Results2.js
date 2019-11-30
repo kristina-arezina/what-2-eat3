@@ -51,6 +51,7 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
+        backgroundColor: "#76EEC6"
     },
     appBarShift: {
         marginLeft: drawerWidth,
@@ -59,6 +60,7 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
         }),
+        backgroundColor: "#76EEC6"
     },
     menuButton: {
         marginRight: 36,
@@ -137,7 +139,7 @@ export default function Results2() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap>
-                        Mini variant drawer
+                        What2Eat
                     </Typography>
                 </Toolbar>
             </AppBar>
