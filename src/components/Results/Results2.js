@@ -32,12 +32,10 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginTop:"160px",
         marginLeft:"10px",
         marginRight:"10px",
         flexGrow: 1,
         display: 'flex',
-
     },
     background:{
         backgroundColor:"#f4f4f4"
