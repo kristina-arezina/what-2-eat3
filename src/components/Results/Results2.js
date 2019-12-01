@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        backgroundColor: "#2E0854"
+        backgroundColor: "#2E0854",
     },
     appBarShift: {
         marginLeft: drawerWidth,
@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
         }),
-        backgroundColor: "#2E0854"
+        backgroundColor: "#2E0854",
     },
     menuButton: {
         marginRight: 36,
@@ -64,6 +64,7 @@ const useStyles = makeStyles(theme => ({
         width: drawerWidth,
         flexShrink: 0,
         whiteSpace: 'nowrap',
+        textTransform: "uppercase",
     },
     drawerOpen: {
         width: drawerWidth,
@@ -72,7 +73,7 @@ const useStyles = makeStyles(theme => ({
             duration: theme.transitions.duration.enteringScreen,
 
         }),
-
+        textTransform: "lowercase",
     },
     drawerClose: {
         transition: theme.transitions.create('width', {
