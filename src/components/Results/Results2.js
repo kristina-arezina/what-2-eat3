@@ -111,6 +111,10 @@ export default function Results2() {
         setOpen(false);
     };
 
+    function ListItemLink(props) {
+        return <ListItem button component="a" {...props} />;
+    }
+
     return (
         <div className={classes.background}>
         <div className={classes.root}>
@@ -172,8 +176,10 @@ export default function Results2() {
                 <List>
                     {['Redo'].map((text, index) => (
                         <ListItem button key={text}>
+                            <ListItemLink href="/">
                             <ListItemIcon>{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
+                            </ListItemLink>
                         </ListItem>
                     ))}
                 </List>
