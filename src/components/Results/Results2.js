@@ -175,12 +175,13 @@ export default function Results2() {
                 <Divider />
                 <List>
                     {['Redo'].map((text, index) => (
-                        <ListItem button key={text}>
+
                             <ListItemLink href="/">
-                            <ListItemIcon>{<RedoIcon />}</ListItemIcon>
+                            <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
-                            </ListItemLink>
-                        </ListItem>
+                        </ListItemLink>
+
+
                     ))}
                 </List>
             </Drawer>
