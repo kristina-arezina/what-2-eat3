@@ -14,7 +14,7 @@ export default function Avocado() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Avocado 🥑
+                    Avocados 🥑
                 </Typography>
                 <Typography color="textSecondary">
                     Reason
