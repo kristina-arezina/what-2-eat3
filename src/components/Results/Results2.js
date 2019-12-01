@@ -6,7 +6,6 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
@@ -167,12 +166,13 @@ export default function Results2() {
                         marginTop:"40px",
                         marginBottom:"40px",
                         fontSize: "35px"
-                    }}>Happiness</Typography>
+                    }}>Happiness
+                </Typography>
                 <Divider />
                 <List>
-                    {['All mail', 'Redo', 'Spam'].map((text, index) => (
+                    {['Redo'].map((text, index) => (
                         <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <RedoIcon />}</ListItemIcon>
+                            <ListItemIcon>{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
