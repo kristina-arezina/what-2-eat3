@@ -188,7 +188,7 @@ export default function Results2() {
                             Reason:
                         </Typography>
                         <Typography variant="body2" component="p">
-                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happyness eat the foods <br />showcased on this page. To find <br />where you can find <br />theses foods in meals in <br />restaurants near you <br />click on the learn <br />more button found <br />under each food.
+                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happyness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food.
                         </Typography>
                     </CardContent>
                 </Card>
