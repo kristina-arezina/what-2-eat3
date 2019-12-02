@@ -171,6 +171,16 @@ export default function Results2() {
                         marginBottom:"40px",
                         fontSize: "35px"
                     }}>Happiness
+                    <Typography>
+                    {['The text you have inputed is detected to have'].map((text, index) => (
+
+                        <div>
+                            <ListItemIcon disableRipple="true">{}</ListItemIcon>
+                            <ListItemText primary={text} />
+                        </div>
+
+                    ))}
+                        </Typography>
                 </Typography>
                 <Divider />
                 <List>
@@ -180,7 +190,6 @@ export default function Results2() {
                             <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
-
 
                     ))}
                 </List>
