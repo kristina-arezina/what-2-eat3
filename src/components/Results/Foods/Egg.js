@@ -14,7 +14,7 @@ export default function Egg() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Eggs 🥚
+                    Eggs <span>🥚</span>
                 </Typography>
                 <Typography color="textSecondary">
                     Reason

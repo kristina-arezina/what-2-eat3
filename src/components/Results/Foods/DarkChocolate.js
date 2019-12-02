@@ -14,7 +14,7 @@ export default function DarkChocolate() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Dark Chocolate 🍫
+                    Dark Chocolate <span>🍫</span>
 
                 </Typography>
                 <Typography color="textSecondary">

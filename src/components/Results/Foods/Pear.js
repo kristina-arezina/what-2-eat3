@@ -14,7 +14,7 @@ export default function Pear() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Pears 🍐
+                    Pears <span> 🍐</span>
                 </Typography>
                 <Typography color="textSecondary">
                     Reason

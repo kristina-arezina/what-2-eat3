@@ -14,7 +14,7 @@ export default function Apple() {
             Food
         </Typography>
         <Typography variant="h5" component="h2">
-            Apples 🍎
+            Apples <span>🍎</span>
         </Typography>
         <Typography color="textSecondary">
             Reason

@@ -14,7 +14,7 @@ export default function Salmon() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    Berries 🍓
+                    Berries <span>🍓</span>
                 </Typography>
                 <Typography color="textSecondary">
                     Reason
