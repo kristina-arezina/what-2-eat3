@@ -68,7 +68,6 @@ const useStyles = makeStyles(theme => ({
         width: drawerWidth,
         flexShrink: 0,
         whiteSpace: 'nowrap',
-        textTransform: "uppercase",
     },
     drawerOpen: {
         width: drawerWidth,
@@ -77,7 +76,6 @@ const useStyles = makeStyles(theme => ({
             duration: theme.transitions.duration.enteringScreen,
 
         }),
-        textTransform: "lowercase",
 
     },
     drawerClose: {
@@ -104,6 +102,9 @@ const useStyles = makeStyles(theme => ({
     },
     pos: {
         color:"#2E0854",
+        textTransform: "uppercase",
+    },
+    header: {
         textTransform: "uppercase",
     }
 }));
@@ -171,7 +172,7 @@ export default function Results2() {
                     </IconButton>
                 </div>
                 <Divider />
-                <Typography
+                <Typography className={classes.header}
                     style={{
                         writingMode: "vertical-rl",
                         textOrientation: "mixed",
