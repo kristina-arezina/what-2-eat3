@@ -76,7 +76,6 @@ const useStyles = makeStyles(theme => ({
             duration: theme.transitions.duration.enteringScreen,
 
         }),
-
     },
     drawerClose: {
         transition: theme.transitions.create('width', {
