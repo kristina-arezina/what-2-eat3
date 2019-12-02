@@ -18,6 +18,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import RedoIcon from '@material-ui/icons/Redo';
 import FoodResults from "./FoodResults.js";
+import Paper from '@material-ui/core/Paper';
+
 
 const drawerWidth = 240;
 
@@ -172,18 +174,21 @@ export default function Results2() {
                         marginBottom:"40px",
                         fontSize: "35px"
                     }}>Happiness
-                    <Typography>
-
-                    {['The text you have inputed is detected to have'].map((text, index) => (
-
-                        <div>
-                            <ListItemIcon disableRipple="true">{}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </div>
-
-                    ))}
-                        </Typography>
                 </Typography>
+                    <Paper style={{
+                        marginLeft:"10px",
+                        marginRight:"10px",
+                        padding:"20px",
+                    }}>
+                        <Typography component="p">
+
+
+
+                            <ListItemText primary={'The text you have inputed is detected to have'} />
+
+                    </Typography>
+                        </Paper>
+
                 <Divider />
                 <List>
                     {['Redo'].map((text, index) => (
