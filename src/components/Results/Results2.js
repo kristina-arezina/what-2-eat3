@@ -73,6 +73,7 @@ const useStyles = makeStyles(theme => ({
 
         }),
         textTransform: "lowercase",
+
     },
     drawerClose: {
         transition: theme.transitions.create('width', {
@@ -172,6 +173,7 @@ export default function Results2() {
                         fontSize: "35px"
                     }}>Happiness
                     <Typography>
+
                     {['The text you have inputed is detected to have'].map((text, index) => (
 
                         <div>
