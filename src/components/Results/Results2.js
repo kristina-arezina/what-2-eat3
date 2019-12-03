@@ -182,13 +182,13 @@ export default function Results2() {
                         fontSize: "35px"
                     }}>Happiness
                 </Typography>
-                <Card className={classes.card}>
+                <Card>
                     <CardContent>
                         <Typography className={classes.pos} color="textSecondary">
-                            Reason:
+                            Why
                         </Typography>
                         <Typography variant="body2" component="p">
-                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happyness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food.
+                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happiness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food.
                         </Typography>
                     </CardContent>
                 </Card>
