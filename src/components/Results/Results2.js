@@ -103,9 +103,13 @@ const useStyles = makeStyles(theme => ({
     pos: {
         color:"#2E0854",
         textTransform: "uppercase",
+        paddingBottom:"10px",
     },
     header: {
         textTransform: "uppercase",
+    },
+    textBox: {
+        paddingBottom:"10px"
     }
 }));
 
@@ -179,11 +183,11 @@ export default function Results2() {
                         transform: "rotate(180deg)",
                         margin:"10%",
                         marginTop:"40px",
-                        marginBottom:"40px",
+                        marginBottom:"20px",
                         fontSize: "35px"
                     }}>Happiness
                 </Typography>
-                <Card>
+                <Card className={classes.textBox}>
                     <CardContent>
                         <Typography className={classes.pos} color="textSecondary">
                             Why
@@ -196,11 +200,23 @@ export default function Results2() {
 
                 <Divider />
                 <List>
-                    {['Redo', 'Home'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <ListItemLink href="/"><RedoIcon /></ListItemLink> : <HomeIcon />}</ListItemIcon>
+                    {['Redo'].map((text, index) => (
+
+                        <ListItemLink href="/">
+                            <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
-                        </ListItem>
+                        </ListItemLink>
+
+
+                    ))}
+                    {['Home'].map((text, index) => (
+
+                        <ListItemLink href="/">
+                            <ListItemIcon disableRipple="true">{<HomeIcon />}</ListItemIcon>
+                            <ListItemText primary={text} />
+                        </ListItemLink>
+
+
                     ))}
                 </List>
             </Drawer>
