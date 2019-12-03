@@ -23,6 +23,11 @@ class App extends React.Component {
                                 <Results />
                             </React.Fragment>
                         )}/>
+                        <Route path="/about" render={props => (
+                            <React.Fragment>
+                                <About />
+                            </React.Fragment>
+                        )}/>
                     </Fragment>
                 </Router>
             </div>
