@@ -22,6 +22,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
+import HomeIcon from '@material-ui/icons/Home';
 
 
 const drawerWidth = 240;
@@ -195,13 +196,11 @@ export default function Results2() {
 
                 <Divider />
                 <List>
-                    {['Redo'].map((text, index) => (
-
-                            <ListItemLink href="/">
-                            <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
+                    {['Redo', 'Home'].map((text, index) => (
+                        <ListItem button key={text}>
+                            <ListItemIcon>{index % 2 === 0 ? <ListItemLink href="/"><RedoIcon /></ListItemLink> : <HomeIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
-                        </ListItemLink>
-
+                        </ListItem>
                     ))}
                 </List>
             </Drawer>
