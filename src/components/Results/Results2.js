@@ -211,7 +211,7 @@ export default function Results2() {
                     ))}
                     {['Home'].map((text, index) => (
 
-                        <ListItemLink href="/">
+                        <ListItemLink href="/about">
                             <ListItemIcon disableRipple="true">{<HomeIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
