@@ -138,7 +138,7 @@ export default function Results2() {
             >
                 <Toolbar>
                     <IconButton
-                        color="inherit"
+                        color="#fffv"
                         aria-label="open drawer"
                         onClick={handleDrawerOpen}
                         edge="start"
