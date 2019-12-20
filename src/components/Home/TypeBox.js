@@ -13,6 +13,10 @@ const useStyles = makeStyles(theme => ({
         left: "calc(50% - 250px)",
         position: "relative",
     },
+    parent:{
+        backgroundColor:"#f4f4f4",
+        backgroundAttachment: "scroll",
+        },
     input: {
         color: "black"
     },
@@ -29,7 +33,7 @@ export default function BasicTextFields() {
     const classes = useStyles();
 
     return (
-        <div className="parent">
+        <div className={classes.parent}>
             <TextField
                 rows="10"
                 id="standard-multiline-static"
