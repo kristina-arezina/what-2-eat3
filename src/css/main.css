@@ -1292,10 +1292,13 @@ body.is-preload #bg:before {
     line-height: 5.5rem;
     border: solid 1px #ffffff;
     border-radius: 100%;
+    background-color:#ffffff;
+
 }
 
 #header .logo .icon:before {
     font-size: 2rem;
+
 }
 
 #header .content {
@@ -1440,10 +1443,12 @@ body.is-preload #header .content .inner {
         width: 4.75rem;
         height: 4.75rem;
         line-height: 4.75rem;
+
     }
 
     #header .logo .icon:before {
         font-size: 1.75rem;
+
     }
 
     #header .content .inner {
