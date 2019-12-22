@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import './App.css';
 import OutlinedTextFields from "./components/Home/TypeBox.js";
 import Results from "./components/Results/Results.js";
 import About from "./components/AboutPage/About.js"
@@ -9,7 +8,7 @@ class App extends React.Component {
     render() {
 
         return (
-            <div className="App">
+            <div >
                 <Router>
 
                     <Fragment>
