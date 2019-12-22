@@ -61,6 +61,7 @@ const useStyles = makeStyles(theme => ({
     },
     hide: {
         display: 'none',
+
     },
     drawer: {
         width: drawerWidth,
@@ -169,7 +170,7 @@ export default function Results2() {
             >
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+                        {theme.direction === 'rtl' ? <ChevronRightIcon style={{color:"black"}}/> : <ChevronLeftIcon style={{color:"black"}}/>}
                     </IconButton>
                 </div>
                 <Divider />
