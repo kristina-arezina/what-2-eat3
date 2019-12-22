@@ -727,11 +727,8 @@ ul.actions.fit.stacked {
 
     ul.actions:not(.fixed) li {
         -webkit-flex-grow: 1;
-        -ms-flex-grow: 1;
         flex-grow: 1;
-        -moz-flex-shrink: 1;
         -webkit-flex-shrink: 1;
-        -ms-flex-shrink: 1;
         flex-shrink: 1;
         padding: 1rem 0 0 0;
         text-align: center;
@@ -876,8 +873,6 @@ button,
 .button {
     -moz-appearance: none;
     -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
