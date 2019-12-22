@@ -1430,15 +1430,10 @@ body.is-preload #header .content .inner {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-align-items: center;
     -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-justify-content: center;
     -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
-    -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -1454,7 +1449,6 @@ body.is-preload #header .content .inner {
     transform: translateY(0.25rem);
     -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
     -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
-    -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
     transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
     padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
     position: relative;
@@ -1489,7 +1483,6 @@ body.is-preload #header .content .inner {
 #main article .close:before {
     -moz-transition: background-color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out;
     content: '';
     display: block;
