@@ -1,6 +1,7 @@
 import React from 'react';
 import "../.././css/main.css";
 import "../.././css/noscript.css";
+import logo from "./logo2.png"
 
 function About() {
     return (
@@ -9,7 +10,7 @@ function About() {
 
                 <header id="header">
                     <div className="logo">
-                        <img src="./logo2.png"/>
+                        <img src={logo} className="logo" alt="logo"/>
 
                     </div>
                     <div className="content">
