@@ -10,13 +10,13 @@ export default function Egg() {
     return (
         <Card >
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom style={{textTransform: "uppercase"}}>
                     Food
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" color="textPrimary" style={{textTransform: "lowercase"}}>
                     Eggs <span>🥚</span>
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography color="textSecondary" style={{textTransform: "uppercase"}}>
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">

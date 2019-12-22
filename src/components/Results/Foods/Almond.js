@@ -10,13 +10,13 @@ export default function Almond() {
     return (
         <Card >
             <CardContent>
-                <Typography color="textSecondary" gutterBottom>
+                <Typography color="textSecondary" gutterBottom style={{textTransform: "uppercase"}}>
                     Food
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography color="textPrimary" variant="h5" component="h2" style={{textTransform: "lowercase"}}>
                     Almonds
                 </Typography>
-                <Typography color="textSecondary">
+                <Typography color="textSecondary" style={{textTransform: "uppercase"}}>
                     Reason
                 </Typography>
                 <Typography variant="body2" component="p">
