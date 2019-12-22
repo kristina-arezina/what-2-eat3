@@ -5,7 +5,7 @@ import logo from "./logo2.png"
 
 function About() {
     return (
-        <div className="App">
+        <div>
             <div id="wrapper">
 
                 <header id="header">

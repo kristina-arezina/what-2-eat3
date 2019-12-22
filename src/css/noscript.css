@@ -13,7 +13,6 @@ body.is-preload #bg:before {
 /* Header */
 
 body.is-preload #header {
-    -moz-filter: none;
     -webkit-filter: none;
     -ms-filter: none;
     filter: none;
