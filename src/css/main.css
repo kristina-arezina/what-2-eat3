@@ -875,7 +875,6 @@ button,
     -webkit-appearance: none;
     -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     background-color: transparent;
     border-radius: 4px;
@@ -884,7 +883,6 @@ button,
     color: #ffffff !important;
     cursor: pointer;
     display: inline-block;
-    font-size: 0.8rem;
     font-weight: 300;
     height: 2.75rem;
     letter-spacing: 0.2rem;
@@ -999,11 +997,9 @@ button {
 #bg:before {
     -moz-transition: background-color 2.5s ease-in-out;
     -webkit-transition: background-color 2.5s ease-in-out;
-    -ms-transition: background-color 2.5s ease-in-out;
     transition: background-color 2.5s ease-in-out;
     -moz-transition-delay: 0.75s;
     -webkit-transition-delay: 0.75s;
-    -ms-transition-delay: 0.75s;
     transition-delay: 0.75s;
     background-size: auto,
     256px 256px;
@@ -1021,7 +1017,6 @@ button {
     transform: scale(1.125);
     -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
     background-position: center;
     background-size: cover;
@@ -1034,7 +1029,6 @@ body.is-article-visible #bg:after {
     -webkit-transform: scale(1.0825);
     -ms-transform: scale(1.0825);
     transform: scale(1.0825);
-    -moz-filter: blur(0.2rem);
     -webkit-filter: blur(0.2rem);
     -ms-filter: blur(0.2rem);
     filter: blur(0.2rem);
@@ -1051,17 +1045,12 @@ body.is-preload #bg:before {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
     -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
-    -moz-justify-content: space-between;
     -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
     justify-content: space-between;
     position: relative;
     min-height: 100vh;
@@ -1106,17 +1095,13 @@ body.is-preload #bg:before {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -moz-align-items: center;
     -webkit-align-items: center;
-    -ms-align-items: center;
     align-items: center;
     -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
     background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
@@ -1129,7 +1114,6 @@ body.is-preload #bg:before {
 #header > * {
     -moz-transition: opacity 0.325s ease-in-out;
     -webkit-transition: opacity 0.325s ease-in-out;
-    -ms-transition: opacity 0.325s ease-in-out;
     transition: opacity 0.325s ease-in-out;
     position: relative;
     margin-top: 3.5rem;
@@ -1180,11 +1164,9 @@ body.is-preload #bg:before {
 #header .content .inner {
     -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
     -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-    -ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
     transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
     -moz-transition-delay: 0.25s;
     -webkit-transition-delay: 0.25s;
-    -ms-transition-delay: 0.25s;
     transition-delay: 0.25s;
     padding: 3rem 2rem;
     max-height: 40rem;
@@ -1263,7 +1245,6 @@ body.is-article-visible #header {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
-    -moz-filter: blur(0.1rem);
     -webkit-filter: blur(0.1rem);
     -ms-filter: blur(0.1rem);
     filter: blur(0.1rem);
@@ -1271,7 +1252,6 @@ body.is-article-visible #header {
 }
 
 body.is-preload #header {
-    -moz-filter: blur(0.125rem);
     -webkit-filter: blur(0.125rem);
     -ms-filter: blur(0.125rem);
     filter: blur(0.125rem);
@@ -1340,7 +1320,6 @@ body.is-preload #header .content .inner {
     }
 
     #header nav ul {
-        -moz-flex-direction: column;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
@@ -1473,7 +1452,6 @@ body.is-preload #header .content .inner {
 #footer {
     -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-    -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
     width: 100%;
     max-width: 100%;
@@ -1494,7 +1472,6 @@ body.is-article-visible #footer {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95);
-    -moz-filter: blur(0.1rem);
     -webkit-filter: blur(0.1rem);
     -ms-filter: blur(0.1rem);
     filter: blur(0.1rem);
