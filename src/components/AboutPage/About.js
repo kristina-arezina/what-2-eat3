@@ -9,7 +9,8 @@ function About() {
 
                 <header id="header">
                     <div className="logo">
-                        <span className="icon fa-gem"></span>
+                        <img src="./logo2.png"/>
+
                     </div>
                     <div className="content">
                         <div className="inner">
@@ -31,7 +32,6 @@ function About() {
 
                     <article id="intro">
                         <h2 className="major">Intro</h2>
-                        <span className="image main"><img src="images/pic01.jpg" alt=""/></span>
                         <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
                             Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus
                             nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#how">awesome
@@ -47,7 +47,6 @@ function About() {
 
                     <article id="how">
                         <h2 className="major">How</h2>
-                        <span className="image main"><img src="images/pic02.jpg" alt=""/></span>
                         <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
                             Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin
                             mauris nec lorem luctus ultrices.</p>
@@ -59,7 +58,6 @@ function About() {
 
                     <article id="why">
                         <h2 className="major">Why</h2>
-                        <span className="image main"><img src="images/pic03.jpg" alt=""/></span>
                         <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend
                             sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
                             Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum
