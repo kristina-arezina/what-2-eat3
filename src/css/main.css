@@ -135,7 +135,6 @@ body, input, select, textarea {
 a {
     -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
     text-decoration: none;
@@ -176,8 +175,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
     border-bottom: solid 1px #ffffff;
     width: -moz-max-content;
-    width: -webkit-max-content;
-    width: -ms-max-content;
     width: max-content;
     padding-bottom: 0.5rem;
     margin: 0 0 2rem 0;
@@ -300,7 +297,6 @@ form > .fields {
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
