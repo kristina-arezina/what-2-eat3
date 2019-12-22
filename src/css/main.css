@@ -20,8 +20,6 @@ section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
     vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -38,11 +36,6 @@ ol, ul {
 
 blockquote, q {
     quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
 }
 
 table {
@@ -1465,19 +1458,6 @@ body.is-preload #header .content .inner {
     -ms-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
-}
-
-#main article .close {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    text-indent: 4rem;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 #main article .close:before {
