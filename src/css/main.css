@@ -634,10 +634,6 @@ input[type="radio"] + label:before {
     font-family: 'Font Awesome 5 Brands';
 }
 
-
-
-
-
 /* List */
 
 ol {
@@ -1425,13 +1421,10 @@ body.is-preload #header .content .inner {
 /* Main */
 
 #main {
-    -moz-flex-grow: 1;
+
     -webkit-flex-grow: 1;
-    -ms-flex-grow: 1;
     flex-grow: 1;
-    -moz-flex-shrink: 1;
     -webkit-flex-shrink: 1;
-    -ms-flex-shrink: 1;
     flex-shrink: 1;
     display: -moz-flex;
     display: -webkit-flex;
