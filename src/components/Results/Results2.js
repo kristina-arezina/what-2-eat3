@@ -116,11 +116,11 @@ export default function Results2() {
     const [open, setOpen] = React.useState(false);
 
     const handleDrawerOpen = () => {
-        setOpen(true);
+        setOpen(false);
     };
 
     const handleDrawerClose = () => {
-        setOpen(false);
+        setOpen(true);
     };
 
     function ListItemLink(props) {
@@ -137,17 +137,6 @@ export default function Results2() {
                 })}
             >
                 <Toolbar>
-                    <IconButton
-                        color="#fffv"
-                        aria-label="open drawer"
-                        onClick={handleDrawerOpen}
-                        edge="start"
-                        className={clsx(classes.menuButton, {
-                            [classes.hide]: open,
-                        })}
-                    >
-                        <MenuIcon />
-                    </IconButton>
                     <Typography variant="h6" noWrap>
                         What2Eat
                     </Typography>
@@ -156,13 +145,13 @@ export default function Results2() {
             <Drawer
                 variant="permanent"
                 className={clsx(classes.drawer, {
-                    [classes.drawerOpen]: open,
-                    [classes.drawerClose]: !open,
+                    [classes.drawerClose]: open,
+                    [classes.drawerOpen]: !open,
                 })}
                 classes={{
                     paper: clsx({
-                        [classes.drawerOpen]: open,
-                        [classes.drawerClose]: !open,
+                        [classes.drawerClose]: open,
+                        [classes.drawerOpen]: !open,
                     }),
                 }}
                 open={open}
