@@ -21,7 +21,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import HomeIcon from '@material-ui/icons/Home';
 
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({

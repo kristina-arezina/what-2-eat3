@@ -5,6 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 export default function Almond() {
 
     return (
@@ -25,7 +26,7 @@ export default function Almond() {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
             </CardActions>
         </Card>
     )

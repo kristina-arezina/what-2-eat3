@@ -26,7 +26,7 @@ export default function Asparagus() {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Learn More</Button>
+                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
             </CardActions>
         </Card>
     )
