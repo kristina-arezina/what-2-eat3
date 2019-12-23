@@ -67,19 +67,7 @@ const useStyles = makeStyles(theme => ({
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
-
         }),
-    },
-    drawerClose: {
-        transition: theme.transitions.create('width', {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
-        overflowX: 'hidden',
-        width: theme.spacing(7) + 1,
-        [theme.breakpoints.up('sm')]: {
-            width: theme.spacing(9) + 1,
-        },
     },
     toolbar: {
         display: 'flex',
@@ -131,12 +119,10 @@ export default function Results2() {
             <Drawer
                 variant="permanent"
                 className={clsx(classes.drawer, {
-                    [classes.drawerClose]: open,
                     [classes.drawerOpen]: !open,
                 })}
                 classes={{
                     paper: clsx({
-                        [classes.drawerClose]: open,
                         [classes.drawerOpen]: !open,
                     }),
                 }}
@@ -176,8 +162,6 @@ export default function Results2() {
                             <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
-
-
                     ))}
                     {['Home'].map((text) => (
 
@@ -185,7 +169,6 @@ export default function Results2() {
                             <ListItemIcon disableRipple="true">{<HomeIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
-
                     ))}
                 </List>
             </Drawer>
