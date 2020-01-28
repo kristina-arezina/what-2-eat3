@@ -2,6 +2,7 @@ import React from 'react';
 import "../.././css/main.css";
 import "../.././css/noscript.css";
 import logo from "./logo2.png"
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 function About() {
     return (
@@ -84,7 +85,7 @@ function About() {
                             </ul>
                         </form>
                         <ul className="icons">
-                            <li><a href="#" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
+                            <li><TwitterIcon/></li>
                             <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
                             <li><a href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
                             <li><a href="#" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
