@@ -33,36 +33,32 @@ function About() {
 
                     <article id="intro">
                         <h2 className="major">Intro</h2>
-                        <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
-                            Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus
-                            nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#how">awesome
-                                work</a>.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. className aptent
-                            taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu
-                            nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies
-                            condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris,
-                            fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam
-                            maximus risus, vel sed vehicula.</p>
+                        <p>A wholesome diet is important to people all over the world as it enables them to
+                        remain healthy and full of energy which is important as both health and energy
+                        lead to a happy life. After looking at a <a href="https://link.springer.com/article/10.1007/s00127-012-0623-5">study </a> done by the Social Psychiatry and
+                        Psychiatric Epidemiology that looked at one's diet quality and their mental health
+                        What2Eat was made to help people determine what foods they should eat in order to
+                        increase their energy and consequently happiness.</p>
+
                     </article>
 
                     <article id="how">
                         <h2 className="major">How</h2>
-                        <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
-                            Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin
-                            mauris nec lorem luctus ultrices.</p>
-                        <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed
-                            nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa
-                            vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-                            sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+                        <p>What2Eat uses sentiment analysis which is a machine learning technique that detects the emotion conveyed in a
+                        given text. So, by entering how your day went in a journal format emotion can be detected and certain foods can
+                        be recommended to increase your feelings of happiness, given whatever emotion that was detected in the text you have imputed. </p>
+                        <p>Since there is an evidential link between diet, mood, and behaviour What2Eat attempts to help people fix their
+                        nutritional imbalances and in order to improve emotional well being. For example, a <a href="https://www.nature.com/articles/s41538-017-0008-y">study</a> found that consumption of fruits and
+                        vegetables high in polyphenolics can prevent and even reverse age-related cognitive deficits by lowering oxidative stress and
+                        inflammation.</p>
                     </article>
 
                     <article id="why">
                         <h2 className="major">Why</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend
-                            sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
-                            Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum
-                            primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                        <p>The fundamental belief behind what2eat is that everyone deserves to have a happy and healthy life that is filled with energy.
+                        And while nutrition is very much in your own control, sometimes it can be hard to figure out exactly what your body needs at a
+                        given moment. While this web app will not be perfect and definitely can not replace a registered dietitian, it is meant to help
+                        people figure out what foods will make them feel their happiest and healthiest. </p>
                     </article>
 
                     <article id="contact">
