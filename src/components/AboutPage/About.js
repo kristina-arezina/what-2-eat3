@@ -3,6 +3,8 @@ import "../.././css/main.css";
 import "../.././css/noscript.css";
 import logo from "./logo2.png"
 import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 function About() {
     return (
@@ -85,10 +87,10 @@ function About() {
                             </ul>
                         </form>
                         <ul className="icons">
-                            <li><TwitterIcon/></li>
-                            <li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-                            <li><a href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-                            <li><a href="#" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
+                            <li></li>
+                            <li><a href="https://twitter.com/ArezinaKristina" className="icon brands fa-twitter-f"><TwitterIcon/></a></li>
+                            <li><a href="https://linkedin.com/in/kristina-arezina-7a0113197" className="icon brands fa-instagram"><LinkedInIcon/></a></li>
+                            <li><a href="https://github.com/kristina-arezina" className="icon brands fa-github"><GitHubIcon/></a></li>
                         </ul>
                     </article>
 
