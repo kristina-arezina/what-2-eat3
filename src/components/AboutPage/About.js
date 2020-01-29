@@ -88,9 +88,9 @@ function About() {
                         </form>
                         <ul className="icons">
                             <li></li>
-                            <li><a href="https://twitter.com/ArezinaKristina" className="icon brands fa-twitter-f"><TwitterIcon/></a></li>
-                            <li><a href="https://linkedin.com/in/kristina-arezina-7a0113197" className="icon brands fa-instagram"><LinkedInIcon/></a></li>
-                            <li><a href="https://github.com/kristina-arezina" className="icon brands fa-github"><GitHubIcon/></a></li>
+                            <li><a href="https://twitter.com/ArezinaKristina" target="_blank"className="icon brands fa-twitter-f"><TwitterIcon/></a></li>
+                            <li><a href="https://linkedin.com/in/kristina-arezina-7a0113197" target="_blank"className="icon brands fa-instagram"><LinkedInIcon/></a></li>
+                            <li><a href="https://github.com/kristina-arezina" target="_blank" className="icon brands fa-github"><GitHubIcon/></a></li>
                         </ul>
                     </article>
 
