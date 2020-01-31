@@ -25,9 +25,6 @@ export default function DarkChocolate() {
                     The cocoa in dark chocolate also contains antioxidants called flavonoids, which may provide several health benefits.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

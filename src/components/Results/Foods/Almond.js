@@ -25,9 +25,6 @@ export default function Almond() {
                     are high in antioxidants that can protect your cells from oxidative damage, a major contributor to aging and disease.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

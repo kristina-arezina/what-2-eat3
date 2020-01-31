@@ -23,9 +23,6 @@ export default function Salmon() {
                     Berries are rich in flavonoid, which helps regulate mood and improve memory and reduces inflammation.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

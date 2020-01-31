@@ -25,9 +25,6 @@ export default function Egg() {
                     vitamins and minerals and are among the best sources of choline you can get.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

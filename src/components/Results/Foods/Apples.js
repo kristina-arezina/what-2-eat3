@@ -24,9 +24,6 @@ export default function Apple() {
             that is caused by oxidation and inflammation of neurons.
         </Typography>
     </CardContent>
-    <CardActions>
-        <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-    </CardActions>
 </Card>
     )
 }

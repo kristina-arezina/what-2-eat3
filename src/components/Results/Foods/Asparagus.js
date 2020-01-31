@@ -25,9 +25,6 @@ export default function Asparagus() {
                     insulin to transport glucose from the bloodstream into cells.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

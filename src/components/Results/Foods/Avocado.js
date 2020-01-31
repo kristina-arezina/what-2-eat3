@@ -24,9 +24,6 @@ export default function Avocado() {
                     Their potential health benefits include improving digestion, decreasing risk of depression, and protection against cancer.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }

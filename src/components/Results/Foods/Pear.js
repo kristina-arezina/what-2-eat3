@@ -25,9 +25,6 @@ export default function Pear() {
                     muscle contractions and heart function.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small"><Typography style={{color:"#000000"}}> Learn More</Typography></Button>
-            </CardActions>
         </Card>
     )
 }
