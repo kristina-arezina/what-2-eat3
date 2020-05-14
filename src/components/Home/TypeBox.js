@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import GoButton from "./Button"
-import '/Users/milanarezina/WebstormProjects/what-2-eat3/what2eat3/src/App.css';
+import '../../App.css';
 
 
 const useStyles = makeStyles(theme => ({
