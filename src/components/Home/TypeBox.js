@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import GoButton from "./Button"
 import '../../App.css';
+import TextField from '@material-ui/core/TextField';
 import Sentiment from 'sentiment';
 const sentiment = new Sentiment();
 
@@ -15,6 +16,7 @@ class TypeBox extends Component {
         this.findSentiment = this.findSentiment.bind(this);
     }
 
+    // General sentiment logic
     findSentiment(event) {
         const result = sentiment.analyze(event.target.value)
         this.setState ({
@@ -22,28 +24,52 @@ class TypeBox extends Component {
         })
         if (result.score < 0) {
             this.setState({
-                generalSentiment: 'Negative'
+                generalSentiment: 'Upset ☹️'
             })
-    } else if (result.score > 0) {
+        } else if (result.score > 0) {
         this.setState({
-            generalSentiment: 'Postive'
+            generalSentiment: 'Happy 😃'
         })
-    } else {
+        } else {
         this.setState({
-            generalSentiment: 'Neutral' 
-    })
-}
+            generalSentiment: 'Chill 😐' 
+        })
+        }
     }
 
     render() {
         return(
-            <div className = "parent">
-                <h2 style={{color: "black"}}>Text Sentiment Anaysis</h2>
-                <p style={{color: "black"}}>Enter text for real-time analysis:</p>
-                <textarea onChange={this.findSentiment}/>
-        <p style={{color: "black"}}>Sentiment Score: {this.state.sentimentScore}</p>
-        <p style={{color: "black"}}>General Sentiment: {this.state.generalSentiment}</p>
-                <GoButton/>
+            <div style={{ backgroundColor:"#f4f4f4",
+                        backgroundAttachment: "scroll",
+                        marginLeft:"40px",
+
+
+                        
+                        }}>
+                
+                <h2 style={{top:"70px", color: "black", position: "relative",left: "calc(40% - 250px)",marginLeft:"40px",}}>Text Sentiment Anaysis</h2>
+                <span style={{position: "relative", top:"70px",
+                        left: "calc(50% - 250px)",}}>
+                <p>Sentiment Score: {this.state.sentimentScore}</p>
+                <p>General Sentiment: {this.state.generalSentiment}</p>
+                </span>
+                
+                <TextField style={{ width: "500px",
+                                    top:"60px",
+                                    left: "calc(50% - 250px)",
+                                    position: "relative",
+                                    marginRight:"40px",
+                                }}
+            
+                    id="outlined-textarea"
+                    label="Enter text for real-time analysis"
+                    placeholder="Enter text for real-time analysis"
+                    multiline
+                    variant="outlined" 
+                    rows={10}
+                    onChange={this.findSentiment}
+                />
+            <GoButton style={{marginLeft:"-20px"}}/>
             </div>    
         ) 
     }

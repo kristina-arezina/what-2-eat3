@@ -5,12 +5,11 @@ import {makeStyles} from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
     textField: {
         width: "200px",
-        top: "50%",
         left:"calc(50% - 100px)",
         height: 80,
-        position: "absolute",
         background: "#2E0854",
-        color:"white"
+        color:"white",
+        top: "80px",
     },
 }));
 
@@ -21,7 +20,7 @@ export default function GoButton() {
         <div>
             <Button
                 href="/results"
-                variant="contained"
+                
                     className={classes.textField}
             >
                 GO
