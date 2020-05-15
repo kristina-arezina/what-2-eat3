@@ -5,13 +5,15 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "compromise": "^13.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-rotating-text": "^1.4.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
-    "react-text-rotator": "0.0.6"
+    "react-text-rotator": "0.0.6",
+    "sentiment": "^5.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

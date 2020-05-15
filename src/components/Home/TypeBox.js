@@ -1,58 +1,52 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import React, {Component} from 'react';
 import GoButton from "./Button"
 import '../../App.css';
+import Sentiment from 'sentiment';
+const sentiment = new Sentiment();
 
+class TypeBox extends Component {
+    
+    constructor(props) {
+        super(props);
+        this.state = {
+            sentimentScore: null,
+            generalSentiment: null,
+        };
+        this.findSentiment = this.findSentiment.bind(this);
+    }
 
-const useStyles = makeStyles(theme => ({
-    textField: {
-        width: "500px",
-        top:"100px",
-        height: 600,
-        left: "calc(50% - 250px)",
-        position: "relative",
-    },
-    parent:{
-        backgroundColor:"#f4f4f4",
-        backgroundAttachment: "scroll",
-        },
-    input: {
-        color: "black"
-    },
-    notchedOutline: {
-        borderWidth: "1px",
-        borderColor: "#2E0854 !important"
-    },
-    floatingLabelFocusStyle: {
-        color: "black"
-    },
-}));
-
-export default function BasicTextFields() {
-    const classes = useStyles();
-
-    return (
-        <div className={classes.parent}>
-            <TextField
-                rows="10"
-                id="standard-multiline-static"
-                placeholder="How did your day go?"
-
-                multiline
-                className={classes.textField}
-                margin="normal"
-                variant="outlined"
-                InputProps={{
-                    className: classes.input,
-                    classes: {
-                        notchedOutline: classes.notchedOutline
-                    }                }}
-                InputPlaceholderProps={{
-                    className: classes.floatingLabelFocusStyle,
-                }}
-            />
-            <GoButton/>
-        </div>
-    );
+    findSentiment(event) {
+        const result = sentiment.analyze(event.target.value)
+        this.setState ({
+            sentimentScore: result.score
+        })
+        if (result.score < 0) {
+            this.setState({
+                generalSentiment: 'Negative'
+            })
+    } else if (result.score > 0) {
+        this.setState({
+            generalSentiment: 'Postive'
+        })
+    } else {
+        this.setState({
+            generalSentiment: 'Neutral' 
+    })
 }
+    }
+
+    render() {
+        return(
+            <div className = "parent">
+                <h2 style={{color: "black"}}>Text Sentiment Anaysis</h2>
+                <p style={{color: "black"}}>Enter text for real-time analysis:</p>
+                <textarea onChange={this.findSentiment}/>
+        <p style={{color: "black"}}>Sentiment Score: {this.state.sentimentScore}</p>
+        <p style={{color: "black"}}>General Sentiment: {this.state.generalSentiment}</p>
+                <GoButton/>
+            </div>    
+        ) 
+    }
+}
+
+export default TypeBox;

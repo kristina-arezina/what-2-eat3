@@ -125,7 +125,7 @@ html {
 }
 
 body, input, select, textarea {
-    color: #ffffff;
+    color: "black";
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     font-size: 1rem;
@@ -416,7 +416,7 @@ select {
 
 select option {
     color: #ffffff;
-    background: #1b1f22;
+    background: #f4f4f4;
 }
 
 select:focus::-ms-value {
@@ -943,7 +943,7 @@ input[type="button"].primary,
 button.primary,
 .button.primary {
     background-color: #ffffff;
-    color: #1b1f22 !important;
+    color: #f4f4f4 !important;
     font-weight: 600;
 }
 
