@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -16,7 +16,8 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import HomeIcon from '@material-ui/icons/Home';
 
-const drawerWidth = 240;
+
+const drawerWidth = 300;
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -97,6 +98,8 @@ export default function Results2() {
     const classes = useStyles();
     const [open] = React.useState(false);
 
+    
+
     function ListItemLink(props) {
         return <ListItem button component="a" {...props} />;
     }
@@ -132,7 +135,7 @@ export default function Results2() {
 
                 </div>
                 <Divider />
-                <Typography className={classes.header}
+                <Typography className={classes.header} 
                     style={{
                         writingMode: "vertical-rl",
                         textOrientation: "mixed",
@@ -141,7 +144,9 @@ export default function Results2() {
                         marginTop:"40px",
                         marginBottom:"20px",
                         fontSize: "35px"
-                    }}>Happiness
+                    }}
+                   
+                    >
                 </Typography>
                 <Card className={classes.textBox}>
                     <CardContent>
