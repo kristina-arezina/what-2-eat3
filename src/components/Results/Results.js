@@ -6,12 +6,14 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
+const happy = "happy";
+
 export default function Results() {
     const classes = useStyles();
-
+    
     return (
         <div>
-            <Results2/>
+            <Results2 happy={happy}/>
         </div>
     );
 }

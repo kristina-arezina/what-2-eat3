@@ -94,11 +94,9 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function Results2() {
+export default function Results2(props) {
     const classes = useStyles();
-    const [open] = React.useState(false);
-
-    
+    const [open] = React.useState(false); 
 
     function ListItemLink(props) {
         return <ListItem button component="a" {...props} />;
@@ -145,8 +143,8 @@ export default function Results2() {
                         marginBottom:"20px",
                         fontSize: "35px"
                     }}
-                   
                     >
+                    {props.happy}
                 </Typography>
                 <Card className={classes.textBox}>
                     <CardContent>

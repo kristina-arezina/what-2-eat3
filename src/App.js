@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import OutlinedTextFields from "./components/Home/TypeBox.js";
+import TypeBox from "./components/Home/TypeBox.js";
 import Results from "./components/Results/Results.js";
 import About from "./components/AboutPage/About.js"
 
 class App extends React.Component {
-    render() {
 
+    
+    render() {
         return (
             <div >
                 <Router>
@@ -14,7 +15,7 @@ class App extends React.Component {
                     <Fragment>
                         <Route exact path="/" render={props => (
                             <React.Fragment >
-                                <OutlinedTextFields />
+                                <TypeBox/>
                             </React.Fragment>
                         )}/>
                         <Route path="/results" render={props => (

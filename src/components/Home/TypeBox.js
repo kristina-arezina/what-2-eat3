@@ -16,6 +16,7 @@ class TypeBox extends Component {
         this.findSentiment = this.findSentiment.bind(this);
     }
 
+
     // General sentiment logic
     findSentiment(event) {
         const result = sentiment.analyze(event.target.value)
