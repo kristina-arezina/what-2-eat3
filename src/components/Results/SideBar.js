@@ -136,8 +136,7 @@ export default function SideBar(props) {
                     style={{
                         writingMode: "vertical-rl",
                         textOrientation: "mixed",
-                        transform: "rotate(180deg)",
-                        margin:"10%",
+                        marginRight:"75%",
                         marginTop:"40px",
                         marginBottom:"20px",
                         fontSize: "35px"

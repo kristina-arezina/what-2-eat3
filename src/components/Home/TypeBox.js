@@ -27,7 +27,7 @@ class TypeBox extends Component {
         })
         if (result.score < 0) {
             this.setState({
-                generalSentiment: 'Upset ☹️'
+                generalSentiment: 'Upset 😔'
             })
         } else if (result.score > 0) {
         this.setState({
