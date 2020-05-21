@@ -3,6 +3,8 @@ import GoButton from "./Button"
 import '../../App.css';
 import TextField from '@material-ui/core/TextField';
 import Sentiment from 'sentiment';
+import SideBar from "../Results/SideBar";
+
 const sentiment = new Sentiment();
 
 class TypeBox extends Component {
@@ -68,6 +70,7 @@ class TypeBox extends Component {
                     onChange={this.findSentiment}
                 />
             <GoButton style={{marginLeft:"-20px"}}/>
+            <SideBar generalSentiment={this.state.generalSentiment}/>
             </div>    
         ) 
     }
