@@ -150,7 +150,8 @@ export default function SideBar(props) {
                             Why
                         </Typography>
                         <Typography variant="body2" component="p">
-                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happiness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food.
+                        {props.generalSentimentText}
+                            {/* Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happiness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food. */}
                         </Typography>
                     </CardContent>
                 </Card>

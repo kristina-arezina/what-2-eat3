@@ -14,6 +14,7 @@ class TypeBox extends Component {
         this.state = {
             sentimentScore: null,
             generalSentiment: null,
+            generalSentimentText: null,
         };
         this.findSentiment = this.findSentiment.bind(this);
     }
@@ -27,11 +28,12 @@ class TypeBox extends Component {
         })
         if (result.score < 0) {
             this.setState({
-                generalSentiment: 'Upset 😔'
+                generalSentiment: 'Upset 😔',
             })
         } else if (result.score > 0) {
         this.setState({
-            generalSentiment: 'Happy 😃'
+            generalSentiment: 'Happy 😃',
+            generalSentimentText: "Happiness was detected in the text that you have inputed! To maintain your happiness eat the foods showcased on this page. Enjoy and stay happy!"
         })
         } else {
         this.setState({
@@ -72,7 +74,7 @@ class TypeBox extends Component {
                     onChange={this.findSentiment}
                 />
             <GoButton style={{marginLeft:"-20px"}}/>
-            <SideBar generalSentiment={this.state.generalSentiment}/>
+            <SideBar generalSentiment={this.state.generalSentiment} generalSentimentText={this.state.generalSentimentText} />
             </div>    
         ) 
     }
