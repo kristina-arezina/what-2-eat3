@@ -106,7 +106,7 @@ export default function Results2(props) {
     return (
         <div className={classes.background}>
         <div className={classes.root}>
-        <SideBar>{props.generalSentiment}</SideBar>
+        <SideBar>{props.generalSentiment} {props.generalSentimentText}</SideBar>
             <FoodResults/>
         </div>
         </div>

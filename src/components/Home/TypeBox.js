@@ -14,8 +14,7 @@ class TypeBox extends Component {
         this.state = {
             sentimentScore: null,
             generalSentiment: null,
-            generalSentimentText: null,
-            why: null,
+            why: "Heyo! Welcome to What2Eat",
         };
         this.findSentiment = this.findSentiment.bind(this);
     }
@@ -31,19 +30,19 @@ class TypeBox extends Component {
             this.setState({
                 generalSentiment: 'Upset 😔',
                 generalSentimentText: "From the text you have inputted it was detected that you are feeling upset! To feel better eat the foods showcased on this page. Enjoy and feel better!",
-                why:"why",
+                why:"",
             })
         } else if (result.score > 0) {
         this.setState({
             generalSentiment: 'Happy 😃',
             generalSentimentText: "Happiness was detected in the text that you have inputed! To maintain your happiness eat the foods showcased on this page. Enjoy and stay happy!",
-            why:"why",
+            why:"",
         })
         } else {
         this.setState({
             generalSentiment: 'Chill 😐',
             generalSentimentText: "What do you call a chilled out octopus?... a calmares. Just kidding. From the text you have inputted it was detected that you are feeling chill. To keep your state of zen and clam eat the following foods. And yes they include calamari : )",
-            why:"why",
+            why:"",
         })
         }
     }

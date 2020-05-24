@@ -81,7 +81,6 @@ const useStyles = makeStyles(theme => ({
     },
     pos: {
         color:"#2E0854",
-        textTransform: "uppercase",
         paddingBottom:"10px",
     },
     header: {
@@ -149,7 +148,6 @@ export default function SideBar(props) {
                     <CardContent>
                         <Typography className={classes.pos} color="textSecondary">
                         {props.why}
-                            {/* Why */}
                         </Typography>
                         <Typography variant="body2" component="p">
                         {props.generalSentimentText}
