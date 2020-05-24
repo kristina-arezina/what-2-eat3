@@ -12,25 +12,15 @@ import Cucumber from "./Foods/Berries.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginLeft:"10px",
-        marginRight:"10px",
-        flexGrow: 1,
-        display: 'flex',
-    },
-    background:{
-        backgroundColor:"#f4f4f4"
-    },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
+        marginTop:"13%",
+        marginRight:"2%"
     },
 }));
 
 export default function FoodResults() {
     const classes = useStyles();
     return (
-        <div>
+        <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12} md={3} >
                     <Apple/>

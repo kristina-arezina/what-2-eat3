@@ -45,9 +45,11 @@ class TypeBox extends Component {
             <div style={{ backgroundColor:"#f4f4f4",
                         backgroundAttachment: "scroll",
                         marginLeft:"40px",
+                        position: "relative",
+                        top:"70px"
                         }}>
                 
-                <h2 style={{top:"70px", color: "black", position: "relative",left: "calc(40% - 250px)",marginLeft:"40px",}}>Text Sentiment Anaysis</h2>
+                <h2 style={{top:"70px", color: "black", position: "relative",left: "calc(45% - 250px)",marginLeft:"40px",}}>Text Sentiment Anaysis</h2>
                 <span style={{position: "relative", top:"70px",
                         left: "calc(50% - 250px)",}}>
                 <p>Sentiment Score: {this.state.sentimentScore}</p>
