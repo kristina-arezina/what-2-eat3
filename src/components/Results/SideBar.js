@@ -148,7 +148,8 @@ export default function SideBar(props) {
                 <Card className={classes.textBox}>
                     <CardContent>
                         <Typography className={classes.pos} color="textSecondary">
-                            Why
+                        {props.why}
+                            {/* Why */}
                         </Typography>
                         <Typography variant="body2" component="p">
                         {props.generalSentimentText}
