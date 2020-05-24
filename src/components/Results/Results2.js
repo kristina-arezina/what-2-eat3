@@ -15,6 +15,7 @@ import FoodResults from "./FoodResults.js";
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import HomeIcon from '@material-ui/icons/Home';
+import SideBar from "../Results/SideBar"; 
 
 
 const drawerWidth = 300;
@@ -105,80 +106,8 @@ export default function Results2(props) {
     return (
         <div className={classes.background}>
         <div className={classes.root}>
-            <AppBar
-                position="fixed"
-                className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
-                })}
-            >
-                <Toolbar>
-                    <Typography variant="h6" noWrap>
-                        What2Eat
-                    </Typography>
-                </Toolbar>
-            </AppBar>
-            <Drawer
-                variant="permanent"
-                className={clsx(classes.drawer, {
-                    [classes.drawerOpen]: !open,
-                })}
-                classes={{
-                    paper: clsx({
-                        [classes.drawerOpen]: !open,
-                    }),
-                }}
-                open={open}
-            >
-                <div className={classes.toolbar}>
-
-                </div>
-                <Divider />
-                <Typography className={classes.header} 
-                    style={{
-                        writingMode: "vertical-rl",
-                        textOrientation: "mixed",
-                        transform: "rotate(180deg)",
-                        margin:"10%",
-                        marginTop:"40px",
-                        marginBottom:"20px",
-                        fontSize: "35px"
-                    }}
-                    >
-                    {props.happy}
-                </Typography>
-                <Card className={classes.textBox}>
-                    <CardContent>
-                        <Typography className={classes.pos} color="textSecondary">
-                            Why
-                        </Typography>
-                        <Typography variant="body2" component="p">
-                            Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happiness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food.
-                        </Typography>
-                    </CardContent>
-                </Card>
-
-                <Divider />
-                <List>
-                    {['Redo'].map((text) => (
-
-                        <ListItemLink href="/">
-                            <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemLink>
-                    ))}
-                    {['Home'].map((text) => (
-
-                        <ListItemLink href="/about">
-                            <ListItemIcon disableRipple="true">{<HomeIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItemLink>
-                    ))}
-                </List>
-            </Drawer>
-            <main className={classes.content}>
-                <div className={classes.toolbar} />
+            <SideBar/>
             <FoodResults/>
-            </main>
         </div>
         </div>
     );
