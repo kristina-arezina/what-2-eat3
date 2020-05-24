@@ -60,7 +60,6 @@ const useStyles = makeStyles(theme => ({
     drawer: {
         width: drawerWidth,
         flexShrink: 0,
-        whiteSpace: 'nowrap',
     },
     drawerOpen: {
         width: drawerWidth,
@@ -89,7 +88,9 @@ const useStyles = makeStyles(theme => ({
         textTransform: "uppercase",
     },
     textBox: {
-        paddingBottom:"10px"
+        paddingBottom:"10px",
+        wordWrap: "break-word",
+
     }
 }));
 
@@ -151,7 +152,6 @@ export default function SideBar(props) {
                         </Typography>
                         <Typography variant="body2" component="p">
                         {props.generalSentimentText}
-                            {/* Happiness was detected in<br /> the text that you have <br />inputted. To maintain your <br />happiness eat the foods <br />showcased on this <br />page. To find where you can <br />find theses foods in meals in <br />restaurants near you click <br />on the learn more button <br />found under each food. */}
                         </Typography>
                     </CardContent>
                 </Card>
