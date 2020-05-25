@@ -8,13 +8,7 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import RedoIcon from '@material-ui/icons/Redo';
 import FoodResults from "./FoodResults.js";
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import HomeIcon from '@material-ui/icons/Home';
 import SideBar from "../Results/SideBar"; 
 
 
@@ -106,7 +100,7 @@ export default function Results2(props) {
     return (
         <div className={classes.background}>
         <div className={classes.root}>
-        <SideBar>{props.generalSentiment} {props.generalSentimentText}</SideBar>
+        <SideBar>{props.generalSentiment} </SideBar>
             <FoodResults/>
         </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import TypeBox from "./components/Home/TypeBox.js";
+import TypeBox from "./components/TypeBox.js";
 import Results from "./components/Results/Results.js";
 import About from "./components/AboutPage/About.js"
 

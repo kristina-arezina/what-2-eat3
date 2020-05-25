@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import GoButton from "./Button"
-import '../../App.css';
+import GoButton from "./Home/Button"
+import '../App.css';
 import TextField from '@material-ui/core/TextField';
 import Sentiment from 'sentiment';
-import SideBar from "../Results/SideBar";
+import SideBar from "./Results/SideBar";
 
 const sentiment = new Sentiment();
 
