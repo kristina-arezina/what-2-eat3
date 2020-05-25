@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import ListItem from '@material-ui/core/ListItem';
 import FoodResults from "./FoodResults.js";
-import SideBar from "../Results/SideBar"; 
-
+import SideBar from "./SideBar";
 
 const drawerWidth = 300;
 
@@ -84,17 +82,13 @@ const useStyles = makeStyles(theme => ({
 
 export default function Results2(props) {
     const classes = useStyles();
-    const [open] = React.useState(false); 
-
-    function ListItemLink(props) {
-        return <ListItem button component="a" {...props} />;
-    }
+    const [] = React.useState(false); 
 
     return (
         <div className={classes.background}>
         <div className={classes.root}>
-        <SideBar>{props.generalSentiment} </SideBar>
             <FoodResults/>
+            
         </div>
         </div>
     );
