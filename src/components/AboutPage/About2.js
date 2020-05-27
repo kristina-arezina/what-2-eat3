@@ -5,8 +5,9 @@ import SingleLineGridList from "./Pictures.js";
 function About() {
     return(
         <div>
-            <ResultsDrawer/>
             <SingleLineGridList/>
+            <ResultsDrawer/>
+            
         </div>
     )
 }
