@@ -9,7 +9,7 @@ import tileData from './TitleData';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      marginTop: "8%",
+      marginTop: "5%",
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
