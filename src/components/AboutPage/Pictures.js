@@ -9,7 +9,7 @@ import tileData from './TitleData';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      marginTop: "5%",
+    marginTop: "5%",
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
@@ -39,18 +39,6 @@ export default function SingleLineGridList() {
         {tileData.map((tile) => (
           <GridListTile key={tile.img}>
             <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              classes={{
-                root: classes.titleBar,
-                title: classes.title,
-              }}
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
-            />
           </GridListTile>
         ))}
       </GridList>

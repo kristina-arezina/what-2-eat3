@@ -9,33 +9,21 @@ import pears from "./images/pears.jpg";
 const tileData = [
     {
         img: almonds,
-        title: "Almonds",
-        author: "Jerry",
     },
     {
         img: apples,
-        title: "Apples",
-        author: "Smith",
     },
     {
         img: avocado,
-        title: "Apples",
-        author: "Smith",
     },
     {
         img: blueberry,
-        title: "Apples",
-        author: "Smith",
     },
     {
         img: chocolate,
-        title: "Apples",
-        author: "Smith",
     },
     {
         img: pears,
-        title: "Apples",
-        author: "Smith",
     },
 ]
 
