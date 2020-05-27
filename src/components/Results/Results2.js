@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import FoodResults from "./FoodResults.js";
+import ResultsDrawer from "./Drawer.js"; 
 
 const drawerWidth = 300;
 
@@ -14,69 +15,6 @@ const useStyles = makeStyles(theme => ({
     background:{
         backgroundColor:"#f4f4f4"
     },
-    paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-    },
-    appBar: {
-        zIndex: theme.zIndex.drawer + 1,
-        transition: theme.transitions.create(['width', 'margin'], {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
-        backgroundColor: "#2E0854",
-    },
-    appBarShift: {
-        marginLeft: drawerWidth,
-        width: `calc(100% - ${drawerWidth}px)`,
-        transition: theme.transitions.create(['width', 'margin'], {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
-        backgroundColor: "#2E0854",
-    },
-    menuButton: {
-        marginRight: 36,
-    },
-    hide: {
-        display: 'none',
-
-    },
-    drawer: {
-        width: drawerWidth,
-        flexShrink: 0,
-        whiteSpace: 'nowrap',
-    },
-    drawerOpen: {
-        width: drawerWidth,
-        transition: theme.transitions.create('width', {
-            easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
-    },
-    toolbar: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-end',
-        padding: theme.spacing(0, 1),
-        ...theme.mixins.toolbar,
-    },
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing(3),
-    },
-    pos: {
-        color:"#2E0854",
-        textTransform: "uppercase",
-        paddingBottom:"10px",
-    },
-    header: {
-        textTransform: "uppercase",
-    },
-    textBox: {
-        paddingBottom:"10px"
-    }
 }));
 
 export default function Results2(props) {
@@ -87,6 +25,7 @@ export default function Results2(props) {
     return (
         <div className={classes.background}>
         <div className={classes.root}>
+            <ResultsDrawer/>
             <FoodResults/>
            
         </div>

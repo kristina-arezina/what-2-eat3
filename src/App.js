@@ -3,11 +3,10 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Results2 from "./components/Results/Results2.js";
 import About from "./components/AboutPage/About.js";
 import GoButton from "./components/Home/Button";
-import Button from '@material-ui/core/Button';
 import './App.css';
 import TextField from '@material-ui/core/TextField';
 import Sentiment from 'sentiment';
-import SideBar from "./components/Results/SideBar";
+import SideBar from "./components/Home/SideBar";
 
 const sentiment = new Sentiment();
 
@@ -98,9 +97,8 @@ class App extends React.Component {
                         )}/>
                         <Route path="/results" render={props => (
                             <React.Fragment>
-                                <Button onClick={this.findSentiment} style={{paddingLeft:"500px", paddingTop:"100px"}} variant="contained">Default</Button>
+                                
                                 <Results2/>
-                                <SideBar sentimentScore={this.state.sentimentScore} generalSentiment={this.state.generalSentiment} why={this.state.why} generalSentimentText={this.state.generalSentimentText}/>
                                 
                             </React.Fragment>
                         )}/>
