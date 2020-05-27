@@ -36,7 +36,7 @@ export default function TextAbout() {
         <Grow in={checked}>
           <Paper elevation={4} className={classes.paper}>
             <svg className={classes.svg}>
-              <polygon points="0,100 50,00, 100,100" className={classes.polygon} />
+              <polygon />
             </svg>
           </Paper>
         </Grow>
@@ -48,7 +48,7 @@ export default function TextAbout() {
         >
           <Paper elevation={4} className={classes.paper}>
             <svg className={classes.svg}>
-              <polygon points="0,100 50,00, 100,100" className={classes.polygon} />
+              <polygon />
             </svg>
           </Paper>
         </Grow>
