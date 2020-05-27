@@ -12,7 +12,7 @@ import Cucumber from "./Foods/Berries.js"
 
 const useStyles = makeStyles(theme => ({
     root: {
-        marginTop:"13%",
+        marginTop:"6%",
         marginRight:"2%"
     },
 }));

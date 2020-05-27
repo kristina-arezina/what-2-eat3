@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import Results2 from "./components/Results/Results2.js";
-import About from "./components/AboutPage/About.js";
+import About from "./components/AboutPage/About2.js";
 import GoButton from "./components/Home/Button";
 import './App.css';
 import TextField from '@material-ui/core/TextField';
