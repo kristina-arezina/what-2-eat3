@@ -1,8 +1,6 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 export default function DarkChocolate() {
@@ -14,7 +12,7 @@ export default function DarkChocolate() {
                     Food
                 </Typography>
                 <Typography variant="h5" component="h2" color="textPrimary" style={{textTransform: "lowercase"}}>
-                    Dark Chocolate <span>🍫</span>
+                    Dark Chocolate <span role="img" aria-label="chocolate">🍫</span>
 
                 </Typography>
                 <Typography color="textSecondary" style={{textTransform: "uppercase"}}>

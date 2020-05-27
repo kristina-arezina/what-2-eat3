@@ -1,8 +1,6 @@
 import React from 'react';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 export default function Apple() {
@@ -14,7 +12,7 @@ export default function Apple() {
             Food
         </Typography>
         <Typography variant="h5" component="h2" color="textPrimary" style={{textTransform: "lowercase"}}>
-            Apples <span>🍎</span>
+            Apples <span role="img" aria-label="apple">🍎</span>
         </Typography>
         <Typography color="textSecondary" style={{textTransform: "uppercase"}}>
             Reason

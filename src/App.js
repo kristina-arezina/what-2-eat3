@@ -1,8 +1,9 @@
-import React, { Fragment, Component } from 'react';
+import React, { Fragment } from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import Results2 from "./components/Results/Results2.js";
 import About from "./components/AboutPage/About.js";
-import GoButton from "./components/Home/Button"
+import GoButton from "./components/Home/Button";
+import Button from '@material-ui/core/Button';
 import './App.css';
 import TextField from '@material-ui/core/TextField';
 import Sentiment from 'sentiment';
@@ -18,6 +19,7 @@ class App extends React.Component {
             sentimentScore: null,
             generalSentiment: null,
             why: "Heyo! Welcome to What2Eat",
+            target:0,
         };
         this.findSentiment = this.findSentiment.bind(this);
     }
@@ -25,9 +27,11 @@ class App extends React.Component {
      // General sentiment logic
      findSentiment(event) {
         const result = sentiment.analyze(event.target.value)
+    
         this.setState ({
             sentimentScore: result.score
         })
+        
         if (result.score < 0) {
             this.setState({
                 generalSentiment: 'Upset 😔',
@@ -94,8 +98,10 @@ class App extends React.Component {
                         )}/>
                         <Route path="/results" render={props => (
                             <React.Fragment>
-                                <Results2 />
-                                <SideBar generalSentiment={this.state.generalSentiment} why={this.state.why} generalSentimentText={this.state.generalSentimentText}/>
+                                <Button onClick={this.findSentiment} style={{paddingLeft:"500px", paddingTop:"100px"}} variant="contained">Default</Button>
+                                <Results2/>
+                                <SideBar sentimentScore={this.state.sentimentScore} generalSentiment={this.state.generalSentiment} why={this.state.why} generalSentimentText={this.state.generalSentimentText}/>
+                                
                             </React.Fragment>
                         )}/>
                         <Route path="/about" render={props => (

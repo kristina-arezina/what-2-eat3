@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Drawer from '@material-ui/core/Drawer';
@@ -93,16 +93,16 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-export default function SideBar(props) {
+export default function SideBar(props){
+
     const classes = useStyles();
     const [open] = React.useState(false); 
 
     function ListItemLink(props) {
-        return <ListItem button component="a" {...props} />;
+        return <ListItem key={"listItemLinkHome"} button component="a" {...props} />;
     }
-
-    return (
-        <div className={classes.background}>
+    return(
+<div className={classes.background}>
         <div className={classes.root}>
             <AppBar
                 position="fixed"
@@ -159,15 +159,15 @@ export default function SideBar(props) {
                 <List>
                     {['Redo'].map((text) => (
 
-                        <ListItemLink href="/">
-                            <ListItemIcon disableRipple="true">{<RedoIcon />}</ListItemIcon>
+                        <ListItemLink key={"listItemLinkResults"} href="/">
+                            <ListItemIcon >{<RedoIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
                     ))}
                     {['Home'].map((text) => (
 
-                        <ListItemLink href="/about">
-                            <ListItemIcon disableRipple="true">{<HomeIcon />}</ListItemIcon>
+                        <ListItemLink key={"listItemLinkAbout"} href="/about">
+                            <ListItemIcon >{<HomeIcon />}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemLink>
                     ))}
@@ -178,6 +178,7 @@ export default function SideBar(props) {
             </main>
         </div>
         </div>
-    );
+    )
+
 }
 

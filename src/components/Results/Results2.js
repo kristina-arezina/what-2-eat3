@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import FoodResults from "./FoodResults.js";
-import SideBar from "./SideBar";
 
 const drawerWidth = 300;
 
@@ -84,11 +83,12 @@ export default function Results2(props) {
     const classes = useStyles();
     const [] = React.useState(false); 
 
+
     return (
         <div className={classes.background}>
         <div className={classes.root}>
             <FoodResults/>
-            
+           
         </div>
         </div>
     );

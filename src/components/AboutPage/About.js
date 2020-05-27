@@ -39,7 +39,7 @@ function About() {
                         <p>A wholesome diet is essential to people all over the world as it enables them to
                         remain healthy and full of energy, both of which are important as they lead to a happy
                         life. <br/><br/>
-                         <strong>What2Eat</strong> was made after looking at a <a href="https://link.springer.com/article/10.1007/s00127-012-0623-5" target="_blank">study </a>
+                         <strong>What2Eat</strong> was made after looking at a <a href="https://link.springer.com/article/10.1007/s00127-012-0623-5" target="_blank" rel="noopener noreferrer">study </a>
                          done by The International Journal for Research in Social and Genetic Epidemiology and Mental Health Services.
                          Inspiration was drawn from this research as from it one could see that one's diet quality impacted their mental health.
                          However, as many people can attest to, it is often challenging to find what foods one should eat to increase their energy and consequently happiness.
@@ -53,9 +53,9 @@ function About() {
                         given text. So, by entering how your day went in a journal like format emotion can be detected and specific foods can
                         be recommended to increase your feelings of happiness. </p>
                         <p>Since there is an evident link between diet, mood, and behavior <strong>What2Eat</strong> attempts to help people fix their nutritional imbalances
-                        and to improve emotional well being. For example, a <a href="https://www.nature.com/articles/s41538-017-0008-y" target="_blank">study</a> found that
+                        and to improve emotional well being. For example, a <a href="https://www.nature.com/articles/s41538-017-0008-y" target="_blank" rel="noopener noreferrer">study</a> found that
                         consumption of fruits and
-                        vegetables high in <a href ="https://www.medicalnewstoday.com/articles/319728.php#list-of-foods-that-are-high-in-polyphenols" target="_blank">polyphenolics</a> can prevent and even reverse age-related cognitive deficits by lowering oxidative stress and
+                        vegetables high in <a href ="https://www.medicalnewstoday.com/articles/319728.php#list-of-foods-that-are-high-in-polyphenols" target="_blank" rel="noopener noreferrer">polyphenolics</a> can prevent and even reverse age-related cognitive deficits by lowering oxidative stress and
                         inflammation.</p>
                     </article>
 
@@ -91,9 +91,9 @@ function About() {
                         </form>
                         <ul className="icons">
                             <li></li>
-                            <li><a href="https://twitter.com/ArezinaKristina" target="_blank"className="icon brands fa-twitter-f"><TwitterIcon/></a></li>
-                            <li><a href="https://linkedin.com/in/kristina-arezina-7a0113197" target="_blank"className="icon brands fa-instagram"><LinkedInIcon/></a></li>
-                            <li><a href="https://github.com/kristina-arezina" target="_blank" className="icon brands fa-github"><GitHubIcon/></a></li>
+                            <li><a href="https://twitter.com/ArezinaKristina" target="_blank" rel="noopener noreferrer"className="icon brands fa-twitter-f"><TwitterIcon/></a></li>
+                            <li><a href="https://linkedin.com/in/kristina-arezina-7a0113197" target="_blank" rel="noopener noreferrer" className="icon brands fa-instagram"><LinkedInIcon/></a></li>
+                            <li><a href="https://github.com/kristina-arezina" target="_blank" rel="noopener noreferrer" className="icon brands fa-github"><GitHubIcon/></a></li>
                         </ul>
                     </article>
 
