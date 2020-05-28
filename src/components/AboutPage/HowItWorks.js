@@ -16,9 +16,12 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
+    backgroundColor:"#f4f4f4",
+
   },
   actionsContainer: {
     marginBottom: theme.spacing(2),
+    Color:"#f4f4f4" 
   },
   resetContainer: {
     padding: theme.spacing(3),
