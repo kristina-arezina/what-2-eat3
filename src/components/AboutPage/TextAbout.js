@@ -30,7 +30,7 @@ export default function TextAbout() {
     <div className={classes.root}>
       <FormControlLabel
         control={<Switch checked={checked} onChange={handleChange} />}
-        label="Show"
+        label="What is What2Eat?"
       />
       <div className={classes.container}>
         <Grow in={checked}>
