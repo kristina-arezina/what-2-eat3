@@ -6,18 +6,13 @@ import Switch from '@material-ui/core/Switch';
 import Grow from '@material-ui/core/Grow';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     height: "100%",
-    marginLeft:"10%"
+    marginLeft:"7%",
+    marginRight:"2%",
   },
   paper: {
     padding: theme.spacing(2),
@@ -32,8 +27,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginTop:'2%',
+    marginBottom:'2%',
     marginLeft:'calc(50% - 200px)',
-    backgroundColor: "#2E0854"
+    backgroundColor: "#8b5eb1"
   },
   card: {
     maxWidth: 345,
@@ -54,7 +50,7 @@ export default function AutoGrid() {
           <FormControlLabel
             className={classes.toggle} 
             control={<Switch className={classes.toggle} checked={checked} onChange={handleChange} />}
-            label="What is What2Eat?"
+            label="Find out more about Care2Eat"
           />
         </Button>
       <Grid container spacing={3}>
@@ -97,11 +93,12 @@ export default function AutoGrid() {
           style={{ transformOrigin: '0 0 0' }}
           {...(checked ? { timeout: 1000 } : {})}
         >
-          <Paper elevation={4} className={classes.paper}>
+             <Paper elevation={4} className={classes.paper2}>
             <svg className={classes.svg}>
               <polygon />
             </svg>
           </Paper>
+
         </Grow>
         </Grid>
       </Grid>
