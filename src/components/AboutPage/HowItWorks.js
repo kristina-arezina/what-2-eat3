@@ -11,17 +11,15 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    paddingLeft:"8%"
+    paddingLeft:"8%",
   },
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
-    backgroundColor:"#f4f4f4",
 
   },
   actionsContainer: {
     marginBottom: theme.spacing(2),
-    Color:"#f4f4f4" 
   },
   resetContainer: {
     padding: theme.spacing(3),
@@ -29,22 +27,20 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getSteps() {
-  return ['Select campaign settings', 'Create an ad group', 'Create an ad'];
+  return ['Reflect on your day', 'Calculate the emotion', 'Identify the best foods'];
 }
 
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`;
+      return `Type in an account of how your day when. From the text, you inputted What2Eat 
+              will calculate the sentiment detected in your text. But, writing out how your day 
+              when is a great practice for you to feel your best. `;
     case 1:
-      return 'An ad group contains one or more ads which target a shared set of keywords.';
+      return `What2Eat will calculate if your day made you feel happy, chill, or upset. 
+              It will show you what sentiment it detected on the left-hand panel. `;
     case 2:
-      return `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`;
+      return `Try out the foods that have been recommended to feel as happy as you can be. `;
     default:
       return 'Unknown step';
   }
@@ -100,7 +96,7 @@ export default function VerticalLinearStepper() {
       </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
-          <Typography>All steps completed - you&apos;re finished</Typography>
+          <Typography>That's it - eat and be happy</Typography>
           <Button onClick={handleReset} className={classes.button}>
             Reset
           </Button>
