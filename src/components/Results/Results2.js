@@ -3,8 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import FoodResults from "./FoodResults.js";
 import ResultsDrawer from "./Drawer.js"; 
 
-const drawerWidth = 300;
-
 const useStyles = makeStyles(theme => ({
     root: {
         marginLeft:"10px",
@@ -19,7 +17,6 @@ const useStyles = makeStyles(theme => ({
 
 export default function Results2(props) {
     const classes = useStyles();
-    const [] = React.useState(false); 
 
 
     return (
