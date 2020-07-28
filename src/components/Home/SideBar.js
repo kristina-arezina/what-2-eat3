@@ -94,9 +94,9 @@ export default function SideBar(props){
     const classes = useStyles();
     const [open] = React.useState(false); 
 
-    function ListItemLink(props) {
-        return <ListItem key={"listItemLinkHome"} button component="a" {...props} />;
-    }
+    // function ListItemLink(props) {
+    //     return <ListItem key={"listItemLinkHome"} button component="a" {...props} />;
+    // }
     return(
 <div className={classes.background}>
         <div className={classes.root}>
