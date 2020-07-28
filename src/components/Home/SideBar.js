@@ -156,7 +156,7 @@ export default function SideBar(props){
                 </Card>
 
                 <Divider />
-                <List>
+                {/* <List>
                     {['Redo'].map((text) => (
 
                         <ListItemLink key={"listItemLinkResults"} href="/">
@@ -171,7 +171,7 @@ export default function SideBar(props){
                             <ListItemText primary={text} />
                         </ListItemLink>
                     ))}
-                </List>
+                </List> */}
             </Drawer>
             <main className={classes.content}>
                 <div className={classes.toolbar} />

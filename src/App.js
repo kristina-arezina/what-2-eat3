@@ -34,19 +34,19 @@ class App extends React.Component {
         if (result.score < 0) {
             this.setState({
                 generalSentiment: 'Upset 😔',
-                generalSentimentText: "From the text you have inputted it was detected that you are feeling upset! To feel better eat the foods showcased on this page. Enjoy and feel better!",
+                generalSentimentText: "From the text you have inputted it was detected that you are feeling upset! Enjoy and feel better!",
                 why:"",
             })
         } else if (result.score > 0) {
         this.setState({
             generalSentiment: 'Happy 😃',
-            generalSentimentText: "Happiness was detected in the text that you have inputed! To maintain your happiness eat the foods showcased on this page. Enjoy and stay happy!",
+            generalSentimentText: "Happiness was detected in the text that you have inputed! Enjoy and stay happy!",
             why:"",
         })
         } else {
         this.setState({
             generalSentiment: 'Chill 😐',
-            generalSentimentText: "What do you call a chilled out octopus?... a calmares. Just kidding. From the text you have inputted it was detected that you are feeling chill. To keep your state of zen and clam eat the following foods. And yes they include calamari : )",
+            generalSentimentText: "What do you call a chilled out octopus?... a calmares. Just kidding. From the text you have inputted it was detected that you are feeling chill. ",
             why:"",
         })
         }
@@ -90,12 +90,12 @@ class App extends React.Component {
                                         rows={10}
                                         onChange={this.findSentiment}
                                     />
-                                <GoButton style={{marginLeft:"-20px"}}/>
+                                {/* <GoButton style={{marginLeft:"-20px"}}/> */}
                                 <SideBar generalSentiment={this.state.generalSentiment} why={this.state.why} generalSentimentText={this.state.generalSentimentText} />
                                 </div>    
                             </React.Fragment>
                         )}/>
-                        <Route path="/results" render={props => (
+                        {/* <Route path="/results" render={props => (
                             <React.Fragment>
                                 
                                 <Results2/>
@@ -106,7 +106,7 @@ class App extends React.Component {
                             <React.Fragment>
                                 <About />
                             </React.Fragment>
-                        )}/>
+                        )}/> */}
                     </Fragment>
                 </Router>
             </div>
