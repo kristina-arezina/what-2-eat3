@@ -7,10 +7,11 @@ import VerticalLinearStepper from "./HowItWorks"
 function About() {
     return(
         <div>
-            <SingleLineGridList/>
+            <TextAbout/>
             <ResultsDrawer/>
             <VerticalLinearStepper/>
-            <TextAbout/>
+            <SingleLineGridList/>
+            
             
         </div>
     )
