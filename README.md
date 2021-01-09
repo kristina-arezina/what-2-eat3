@@ -7,3 +7,4 @@ Front-end for an application that performs sentiment analysis on journals to giv
 **Built with:**
 - React.js
 - Material UI
+- Natural Language Toolkit (NLTK)
